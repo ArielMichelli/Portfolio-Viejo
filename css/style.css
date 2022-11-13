@@ -55,6 +55,7 @@ li {
     flex-wrap: wrap;
     padding: 15px;
     border: solid 2px white;
+    border-radius: 60px;
 }
 
 .links li a {
@@ -76,34 +77,41 @@ li {
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 20px;
+    padding-top: 20px;
     text-shadow: 1px 1px 3px rgba(1, 68, 252, 0.856);
     transition-duration: 1s;
 }
-.titulo:hover{
+
+.titulo:hover {
     transform: scale(1.1);
 }
 
 /* ======HERO======*/
 .hero {
     margin-top: 0px;
-    height: 85vh;
-    background-color: black;
-    /* background-image: url("../img/hero.jpg"); */
+    height: 55vh;
+    padding: 10px;
+    margin: 10px;
+
+    background-color: white;
+    box-shadow: 3px 3px 10px black;
+    /* background-color: black;
+    background-image: url("../img/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
     display: flex;
 
 }
 
 .hero__texto {
-    height: 100%;
     width: 60%;
     text-align: center;
-    background-color: rgba(0, 0, 255, 0.3);
-    color: white;
+    /* background-color: rgba(0, 0, 255, 0.3); */
+    color: black;
     font-size: 1.4rem;
-
+    border: solid black 1px;
+    box-shadow: 1px 1px 10px black;
     display: flex;
     place-content: center;
     flex-direction: column;
@@ -119,39 +127,48 @@ h2 {
     display: flex;
     height: 100%;
     width: 40%;
-    background-color: rgba(0, 0, 255, 0.3);
+    /* background-color: rgba(0, 0, 255, 0.3); */
 }
 
 .hero__foto img {
-    height: 70%;
     width: 100%;
-    padding: 15px;
-    border-radius: 600px;
-    align-self: center;
+    height: 100%;
+    padding: 5px;
+    border-radius: 50%;
+    /* border-radius: 600px;
+    align-self: center; */
     object-fit: cover;
 }
 
-/* SOBRE MI*/
-/* * {
-    border: solid 1px red;
-} */
-
+/* ==============SOBRE MI============== */
 main {
     margin-top: 0px;
-    background-color: rgba(127, 200, 255, 0.535);
+    background-color: rgba(0, 155, 255, 0.5);
 }
 
-.sobre-mi {
+.contenedor__sobre-mi {
     display: flex;
     width: 90%;
     margin: 20px auto;
     padding: 20px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    
 }
-
+.sobre-mi__imagen{
+    padding: 20px;
+    width: 50%;
+    
+}
+.sobre-mi__imagen img{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 89, 255, 0.5);
+}
 .sobre-mi__texto {
     width: 60%;
     padding: 10px;
+    align-self: center;
+    text-align: center;
 }
 
 .sobre-mi__redes {
@@ -160,14 +177,16 @@ main {
     align-self: center;
 }
 
-/* SECTION QUE-HAGO*/
+/* ==============SERVICIOS - QUE-HAGO============== */
+.que-hago{
+    background-color: white;
+}
 .que-hago__texto {
     border-top: solid 3px rgb(41, 41, 123);
     font-size: 2rem;
     text-align: center;
     margin: 1rem auto;
     padding: 20px;
-
 }
 
 .contenedor__que-hago {
@@ -178,7 +197,7 @@ main {
 
 .que-hago__card {
     margin: 10px auto;
-    width: 500px;
+    width: 400px;
     height: fit-content;
     transition-duration: 1s;
 }
@@ -233,38 +252,66 @@ main {
     transition-duration: 1s;
 }
 
-.tarjeta__estudios:hover{
+.tarjeta__estudios:hover {
     transform: scale(1.03);
     border: solid 1px rgb(32, 138, 237);
 }
 
 /*==========PROYECTOS============*/
-.proyectos{
+.proyectos {
     background-color: white;
 }
-.contenedor__proyectos{
+
+.contenedor__proyectos {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
     place-content: center;
 }
-.tarjeta__proyectos{
+
+.tarjeta__proyectos {
     width: 450px;
     height: 300px;
     border: solid 1px black;
     box-shadow: 3px 3px 5px black;
 }
-.tarjeta__proyectos__titulo{
+
+.tarjeta__proyectos__titulo {
     text-align: center;
     font-size: 1.5rem;
     height: 10%;
 }
-.tarjeta__proyectos__img{
+
+.tarjeta__proyectos__img {
     width: 100%;
     height: 90%;
 }
-.tarjeta__proyectos__img img{
+
+.tarjeta__proyectos__img img {
     width: 100%;
     height: 100%;
+}
+
+/*==========CONTACTO============*/
+.contacto {
+    border-top: dashed 3px black;
+    padding-top: 20px;
+    background-color: white;
+}
+
+.contenedor__contacto {
+    display: flex;
+}
+
+.contacto__img {
+    width: 50%;
+}
+
+.contacto__img img {
+    width: 100%;
+}
+
+.contacto__texto {
+    width: 50%;
 }
