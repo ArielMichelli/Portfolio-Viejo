@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Acme', sans-serif;
+    /* border: solid 1px red; */
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.letra_blanca {
+    font-size: 2rem;
+    color: white;
+}
+
+.letra_amarilla {
+    font-size: 2rem;
+    color: rgb(255, 251, 0);
+}
+
+/* ========= NAVBAR======= */
+.navbar {
+    border: solid 1px black;
+    display: flex;
+    height: fit-content;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: baseline;
+    background: linear-gradient(90deg, rgba(51, 73, 117, 1) 0%, rgba(1, 151, 170, 1) 100%);
+}
+
+.logo {
+    width: 20%;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: rgba(0, 0, 255, 0.3); */
+    color: white;
+    padding: 20px;
+
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+    border: solid 2px white;
+}
+
+.links li a {
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    font-size: 1.5rem;
+    transition-duration: 1s;
+}
+
+.links li a:hover {
+    text-decoration: underline;
+    font-size: 1.7rem;
+}
+
+.titulo {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(1, 68, 252, 0.856);
+    transition-duration: 1s;
+}
+.titulo:hover{
+    transform: scale(1.1);
+}
+
+/* ======HERO======*/
+.hero {
+    margin-top: 0px;
+    height: 85vh;
+    background-color: black;
+    /* background-image: url("../img/hero.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+
+}
+
+.hero__texto {
+    height: 100%;
+    width: 60%;
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0.3);
+    color: white;
+    font-size: 1.4rem;
+
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+}
+
+.hero__texto h1,
+h2 {
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.hero__foto {
+    display: flex;
+    height: 100%;
+    width: 40%;
+    background-color: rgba(0, 0, 255, 0.3);
+}
+
+.hero__foto img {
+    height: 70%;
+    width: 100%;
+    padding: 15px;
+    border-radius: 600px;
+    align-self: center;
+    object-fit: cover;
+}
+
+/* SOBRE MI*/
+/* * {
+    border: solid 1px red;
+} */
+
+main {
+    margin-top: 0px;
+    background-color: rgba(127, 200, 255, 0.535);
+}
+
+.sobre-mi {
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.sobre-mi__texto {
+    width: 60%;
+    padding: 10px;
+}
+
+.sobre-mi__redes {
+    width: 40%;
+    padding: 10px;
+    align-self: center;
+}
+
+/* SECTION QUE-HAGO*/
+.que-hago__texto {
+    border-top: solid 3px rgb(41, 41, 123);
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 20px;
+
+}
+
+.contenedor__que-hago {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+}
+
+.que-hago__card {
+    margin: 10px auto;
+    width: 500px;
+    height: fit-content;
+    transition-duration: 1s;
+}
+
+.que-hago__card h5 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.que-hago__card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.que-hago__card:hover {
+    transform: scale(1.05);
+    border: solid 2px rgb(0, 255, 255);
+}
+
+/*==========ESTUDIOS============*/
+.estudios {
+    border-top: solid 3px rgb(41, 41, 123);
+}
+
+.contenedor__estudios {
+    display: grid;
+    width: 90%;
+    min-height: 60vh;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px auto;
+    padding: 15px;
+    gap: 10px;
+    border: solid 2px black;
+}
+
+.contenedor__estudios h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.tarjeta__estudios {
+    padding: 20px;
+    border: solid 1px black;
+    box-shadow: 5px 3px 5px black;
+    transition-duration: 1s;
+}
+
+.tarjeta__estudios:hover{
+    transform: scale(1.03);
+    border: solid 1px rgb(32, 138, 237);
+}
+
+/*==========PROYECTOS============*/
+.proyectos{
+    background-color: white;
+}
+.contenedor__proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    place-content: center;
+}
+.tarjeta__proyectos{
+    width: 450px;
+    height: 300px;
+    border: solid 1px black;
+    box-shadow: 3px 3px 5px black;
+}
+.tarjeta__proyectos__titulo{
+    text-align: center;
+    font-size: 1.5rem;
+    height: 10%;
+}
+.tarjeta__proyectos__img{
+    width: 100%;
+    height: 90%;
+}
+.tarjeta__proyectos__img img{
+    width: 100%;
+    height: 100%;
+}
